@@ -1,0 +1,16 @@
+[
+    {
+        "img" : "images/bg/1.jpg",
+        "title" : "Digital Power",
+        "subtitle" : "We are a small design studio from San Francisco.", 
+        "btn1" : "Read More",
+        "btn2" : "Services"
+    },
+    {
+        "img" : "images/bg/2.jpg",
+        "title" : "We Are Comet",
+        "subtitle" : "Experts in web design and development.", 
+        "btn1" : "Explore",
+        "btn2" : "Join us"
+    }
+]

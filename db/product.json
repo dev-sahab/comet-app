@@ -1,0 +1,83 @@
+[
+    {
+        "id" : 1, 
+        "title" : "Premium Notch Blazers",
+        "price" : "79.99",
+        "img" : "/images/shop/1.jpg",
+        "cat" : "blazer", 
+        "tag" : "woman", 
+        "review" : "4.5"
+    },
+    {
+        "id" : 2, 
+        "title" : "Premium Suit Blazers",
+        "price" : "199.99",
+        "img" : "/images/shop/2.jpg",
+        "cat" : "blazer",
+        "tag" : "man",
+        "review" : "5"
+    },
+    {
+        "id" : 3, 
+        "title" : "Vintage Sweatshirt",
+        "price" : "99.99",
+        "img" : "/images/shop/3.jpg",
+        "cat" : "t-shirt", 
+        "tag" : "man", 
+        "review" : "4.1"
+    },
+    {
+        "id" : 4, 
+        "title" : "Longline Jersey Jacket",
+        "price" : "19.99",
+        "img" : "/images/shop/4.jpg",
+        "cat" : "jacket", 
+        "tag" : "man", 
+        "review" : "4.8"
+    },
+    {
+        "id" : 5, 
+        "title" : "Tailored Blazers",
+        "price" : "19.99",
+        "img" : "/images/shop/5.jpg",
+        "cat" : "blazer", 
+        "tag" : "woman", 
+        "review" : "4"
+    },
+    {
+        "id" : 6, 
+        "title" : "Overcoat In Camel",
+        "price" : "99.99",
+        "img" : "/images/shop/6.jpg",
+        "cat" : "coat", 
+        "tag" : "man", 
+        "review" : "3.9"
+    },
+    {
+        "id" : 7, 
+        "title" : "Jacket with Fringe",
+        "price" : "35.99",
+        "img" : "/images/shop/7.jpg",
+        "cat" : "jacket", 
+        "tag" : "woman", 
+        "review" : "4.9"
+    },
+    {
+        "id" : 8, 
+        "title" : "Notch Blazers in Longline",
+        "price" : "135.99",
+        "img" : "/images/shop/8.jpg",
+        "cat" : "blazer", 
+        "tag" : "woman", 
+        "review" : "4.6"
+    },
+    {
+        "id" : 9, 
+        "title" : "Waistcoat In Navy",
+        "price" : "299.99",
+        "img" : "/images/shop/9.jpg",
+        "cat" : "coat", 
+        "tag" : "man", 
+        "review" : "4.2"
+    } 
+]
