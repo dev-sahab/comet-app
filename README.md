@@ -1,7 +1,7 @@
 
 # Comet App
 
-This is a semi dynamic web app. Here is showing data form json database. and using search filter, filter by tags & categories.
+This is a semi dynamic web app. Here is showing data from json database. and using search filter, filter by tags & categories.
 
 
 ## Lang. Usage
