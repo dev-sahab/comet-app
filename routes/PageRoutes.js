@@ -12,5 +12,6 @@ routes.get('/category/:cat', showcategories)
 routes.get('/blog/:id', showSingleBlog)
 routes.get('/tag/:tag', showtags)
 
+
 // export
 module.exports = routes;

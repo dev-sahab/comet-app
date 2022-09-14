@@ -45,21 +45,25 @@ const showsingle = (req, res) => {
     })
 }
 
-// shop single page controller
+// shop category page controller
 const showcategories = (req, res) => {
     const product = JSON.parse(product_data.toString());
+
+    const {cat} = req.params;
+    const category = product.filter(data => data.cat.toUpperCase() == cat.toUpperCase() || data.tag.toUpperCase() == cat.toUpperCase())
+
     res.render('category', {
-        product,
-        req
+        product : category
     })
 }
 
-// shop single page controller
+// shop tag page controller
 const showtags = (req, res) => {
     const product = JSON.parse(product_data.toString());
+    const {tag} = req.params;
+    const tags = product.filter(data => data.tag.toUpperCase() == tag.toUpperCase() || data.cat.toUpperCase() == tag.toUpperCase())
     res.render('tags', {
-        product,
-        req
+        product : tags
     })
 }
 
@@ -71,6 +75,7 @@ const showSingleBlog = (req, res) => {
         post : singleBlog
     })
 }
+
 
 // export
 module.exports = {

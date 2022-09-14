@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+    
+
+
 /*
   Style.css file
   Comet Template
@@ -4902,11 +4906,15 @@ footer.dark p {
   border-right: 0;
 }
 
-.nav.product-list li:nth-child(4), 
-.nav.product-list li:nth-child(5), 
-.nav.product-list li:nth-child(6), 
-.nav.product-list li:nth-child(7), 
-.nav.product-list li:nth-child(8), 
-.nav.product-list li:nth-child(9){
-	display: none;
+.nav.product-list li{
+  display: none
+}
+.nav.product-list li:nth-child(1), 
+.nav.product-list li:nth-child(2), 
+.nav.product-list li:nth-child(3){
+	display: block;
+}
+
+.sidebar .widget .nav {
+	display: block;
 }

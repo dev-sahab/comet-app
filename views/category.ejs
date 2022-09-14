@@ -100,24 +100,22 @@
               <div class="container-fluid">
                 <div class="row" id="product-list">
                   <% product.forEach(item => { %>
-                    <% if (item.cat == req.params.cat) { %>
-                        <div class="col-md-4 col-sm-6 list">
-                            <div class="shop-product">
-                              <div class="product-thumb">
-                                <a href="/shop/<%= item.id %>">
-                                  <img src="<%= item.img %> " alt="">
-                                </a>
-                                <div class="product-overlay"><a href="/shop/<%= item.id %>" class="btn btn-color-out btn-sm">Add To Cart<i class="ti-bag"></i></a>
-                                </div>
+                      <div class="col-md-4 col-sm-6 list">
+                          <div class="shop-product">
+                            <div class="product-thumb">
+                              <a href="/shop/<%= item.id %>">
+                                <img src="<%= item.img %> " alt="">
+                              </a>
+                              <div class="product-overlay"><a href="/shop/<%= item.id %>" class="btn btn-color-out btn-sm">Add To Cart<i class="ti-bag"></i></a>
                               </div>
-                              <div class="product-info">
-                                <h4 class="upper"><a href="/shop/<%= item.id %> "><%= item.title %> </a></h4><span>$<%= item.price %> </span>
-                                <div class="save-product"><a href="#"><i class="icon-heart"></i></a>
-                                </div>
+                            </div>
+                            <div class="product-info">
+                              <h4 class="upper"><a href="/shop/<%= item.id %> "><%= item.title %> </a></h4><span>$<%= item.price %> </span>
+                              <div class="save-product"><a href="#"><i class="icon-heart"></i></a>
                               </div>
                             </div>
                           </div>
-                    <% } %>
+                        </div>
                   <% }) %>
                 </div>
                 <!-- end of row-->

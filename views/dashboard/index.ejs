@@ -1,0 +1,195 @@
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins" , sans-serif;
+    }
+    body.top-padding {
+	padding-top: 0;
+}
+    header, footer{
+        display: none;
+    }
+    body{
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+</style>
+
+<div class="dashboard_sidebar active">
+    <div class="logo-content">
+        <div class="logo">
+            <!-- <i class='bx bxl-c-plus-plus'></i>
+            <div class="logo-name">SHB Services</div> -->
+            <div class="logo-name">
+                <a href="/"><img src="/images/logo_light.png"></a>
+            </div>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+        <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search...">
+            <span class="dash_tooltip">Search</span>
+        </li>
+        <li>
+            <a href="/dashboard">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links-name">Dashboard</span>
+            </a>
+            <span class="dash_tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="/dashboard/products">
+                <i class="bx bx-cart-alt"></i>
+                <span class="links-name">Products</span>
+            </a>
+            <span class="dash_tooltip">Products</span>
+        </li>
+        <li>
+            <a href="/dashboard/blogs">
+                <i class='bx bxl-blogger' ></i>
+                <span class="links-name">Blogs</span>
+            </a>
+            <span class="dash_tooltip">Blogs</span>
+        </li>
+        <li>
+            <a href="/dashboard/sliders">
+                <i class="bx bxs-layer"></i>
+                <span class="links-name">Slider</span>
+            </a>
+            <span class="dash_tooltip">Slider</span>
+        </li>
+        <li>
+            <a href="/dashboard/clients">
+                <i class="bx bxs-group"></i>
+                <span class="links-name">Clients</span>
+            </a>
+            <span class="dash_tooltip">Clients</span>
+        </li>
+        <li>
+            <a href="/dashboard/testimonials">
+                <i class="bx bxs-quote-left"></i>
+                <span class="links-name">Testimonials</span>
+            </a>
+            <span class="dash_tooltip">Testimonials</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-folder"></i>
+                <span class="links-name">File Manager</span>
+            </a>
+            <span class="dash_tooltip">File Manager</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-user"></i>
+                <span class="links-name">User</span>
+            </a>
+            <span class="dash_tooltip">User</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-cog"></i>
+                <span class="links-name">Setting</span>
+            </a>
+            <span class="dash_tooltip">Setting</span>
+        </li>
+    </ul>
+    <div class="profile-content">
+        <div class="profile">
+            <div class="profile-details">
+                <img src="/images/Shahab.jpg" alt="">
+                <div class="name-job">
+                    <div class="name">Shahab</div>
+                    <div class="job">Web Developer</div>
+                </div>
+            </div>
+            <i class="bx bx-log-out" id="log-out"></i>
+        </div>
+    </div>
+</div>
+<div class="home-content">
+    <div class="welcome-note"> 
+        <p class="text">Welcome Shahab!</p>
+        <span class="sub-title">Dashboard</span>
+    </div>
+    <div class="quantity">
+        <a href="/dashboard/products">
+            <div class="quan-wrapper products">
+                <div class="logo">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <span>Products</span>
+                </div>
+                <div class="number">
+                    <span><% if (product.length < 10) { %> 0<%= product.length %> <% } else { %> <%= product.length %> <% } %> </span>
+                </div>
+            </div>
+        </a>
+        <a href="/dashboard/sliders">
+            <div class="quan-wrapper slider">
+                <div class="logo">
+                    <i class='bx bxs-layer' ></i>
+                    <span>Slider</span>
+                </div>
+                <div class="number">
+                    <span><% if (slider.length < 10) { %> 0<%= slider.length %> <% } else { %> <%= slider.length %> <% } %> </span>
+                </div>
+            </div>
+        </a>
+        <a href="/dashboard/blogs">
+            <div class="quan-wrapper blogs">
+                <div class="logo">
+                    <i class='bx bxl-blogger' ></i>
+                    <span>Blogs</span>
+                </div>
+                <div class="number">
+                    <span><% if (blog.length < 10) { %> 0<%= blog.length %> <% } else { %> <%= blog.length %> <% } %> </span>
+                </div>
+            </div>
+        </a>
+        <a href="/dashboard/clients">
+            <div class="quan-wrapper clients">
+                <div class="logo">
+                    <i class='bx bxs-group'></i>
+                    <span>Clients</span>
+                </div>
+                <div class="number">
+                    <span><% if (client.length < 10) { %> 0<%= client.length %> <% } else { %> <%= client.length %> <% } %> </span>
+                </div>
+            </div>
+        </a>
+        <a href="/dashboard/testimonials">
+            <div class="quan-wrapper testimonials">
+                <div class="logo">
+                    <i class='bx bxs-quote-left'></i>
+                    <span>Testimonials</span>
+                </div>
+                <div class="number">
+                    <span><% if (testimonial.length < 10) { %> 0<%= testimonial.length %> <% } else { %> <%= testimonial.length %> <% } %> </span>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+    <script>
+        // dashboard
+        let btn = document.querySelector('#btn');
+        let dashboard_sidebar = document.querySelector('.dashboard_sidebar');
+        let searchBtn = document.querySelector('.bx-search');
+
+        btn.onclick = function() {
+            dashboard_sidebar.classList.toggle('active');
+        }
+        searchBtn.onclick = function() {
+            dashboard_sidebar.classList.toggle('active');
+        }
+    </script>
